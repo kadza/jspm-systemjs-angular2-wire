@@ -1,1 +1,0 @@
-# mmw-configurator
