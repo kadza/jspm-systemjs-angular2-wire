@@ -1,4 +1,4 @@
-A playground for systemjs, angular2, jspm, wirejs, ionic
+A playground for systemjs, angular2, jspm, wirejs
 
 Node 0.12.5
 JSPM 0.16.30
