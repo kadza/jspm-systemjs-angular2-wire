@@ -8,16 +8,18 @@ System.config({
       "optimisation.modules.system"
     ]
   },
-
-  meta: {
-    "angular2/*": {
-      deps: [ "zone.js/dist/zone.min.js", "reflect-metadata" ],
-    }
-  },
-
   paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
+  },
+
+  meta: {
+    "angular2/*": {
+      "deps": [
+        "zone.js/dist/zone.min.js",
+        "reflect-metadata"
+      ]
+    }
   },
 
   map: {
@@ -27,6 +29,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "es6-shim": "github:es-shims/es6-shim@0.34.4",
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
+    "wire": "npm:wire@0.10.11",
     "zone.js": "npm:zone.js@0.6.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -146,7 +149,8 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "ieee754": "npm:ieee754@1.1.6",
       "isarray": "npm:isarray@1.0.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:cipher-base@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -332,6 +336,14 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:when@3.7.7": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:wire@0.10.11": {
+      "meld": "npm:meld@1.3.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "when": "npm:when@3.7.7"
     },
     "npm:zone.js@0.5.15": {
       "es6-promise": "npm:es6-promise@3.1.2",

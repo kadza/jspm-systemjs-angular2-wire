@@ -1,5 +1,9 @@
 import { Component } from 'angular2/core';
 import { bootstrap } from 'angular2/platform/browser';
+import wire from 'wire/wire';
+import kuku from './kuku';
+
+wire(kuku).then((a) => console.log(a));
 
 let AppComponent =
     Component({
